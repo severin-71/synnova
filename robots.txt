@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://synnova.com/sitemap.xml
-Host: https://synnova.com
+Sitemap: https://synnovatocloe.netlify.app/sitemap.xml
+Host: https://synnovatocloe.netlify.app
