@@ -28,12 +28,12 @@ titreAnim.addEventListener("click", () => {
     imageAnim.style.width = "100%";
     imageAnim.style.height = "300px";
     imageAnim.style.borderRadius = "16px";
-    titreAnim.textContent = "Animatrice ∧";
+    titreAnim.textContent = "∧";
     showAnim = false;
   }else {
     paraAnim.textContent = "";
     imageAnim.style.display = "none";
-    titreAnim.textContent = "Animatrice ∨";
+    titreAnim.textContent = "∨";
     showAnim = true;
   };
 });
@@ -50,12 +50,12 @@ titreCom.addEventListener("click", () => {
     imageCom.style.width = "100%";
     imageCom.style.height = "300px";
     imageCom.style.borderRadius = "16px";
-    titreCom.textContent = "Communicante ∧";
+    titreCom.textContent = "∧";
     showCom = false;
   }else {
     paraCom.textContent = "";
     imageCom.style.display = "none";
-    titreCom.textContent = "Communicante ∨";
+    titreCom.textContent = "∨";
     showCom = true;
   };
 });
@@ -72,10 +72,10 @@ titreActrice.addEventListener("click", () => {
     imageActrice.style.width = "100%";
     imageActrice.style.height = "300px";
     imageActrice.style.borderRadius = "16px";
-    titreActrice.textContent = "Actrice ∧";
+    titreActrice.textContent = "∧";
     showActrice = false;
   }else {
-    titreActrice.textContent = "Actrice ∨";
+    titreActrice.textContent = "∨";
     paraActrice.textContent = "";
     imageActrice.style.display = "none";
     showActrice = true;
@@ -94,10 +94,10 @@ titreEntre.addEventListener("click", () => {
     imageEntre.style.width = "100%";
     imageEntre.style.height = "300px";
     imageEntre.style.borderRadius = "16px";
-    titreEntre.textContent = "Entrepreneure ∧";
+    titreEntre.textContent = "∧";
     showEntre = false;
   }else {
-    titreEntre.textContent = "Entrepreneure ∨";
+    titreEntre.textContent = "∨";
     paraEntre.textContent = "";
     imageEntre.style.display = "none";
     showEntre = true;

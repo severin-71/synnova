@@ -94,6 +94,10 @@
       font-weight: 600;
       transition: background .25s ease, transform .2s ease;
     }
+
+    .univers{
+      background-color: rgb(55, 55, 135);
+    }
     .nav-btn:hover {
       background: rgba(255,255,255,.16);
       transform: translateY(-2px);

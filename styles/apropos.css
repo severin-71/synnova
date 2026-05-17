@@ -104,6 +104,10 @@ section {
   border: 1px solid rgba(255,255,255,.16);
   transition: transform .2s ease, background .2s ease, color .2s ease;
 }
+
+.apropos{
+  background-color: rgb(55, 55, 135);
+}
 .nav-btn:hover { transform: translateY(-2px); background: rgba(255,255,255,.2); }
 
 /*STORYTELING */

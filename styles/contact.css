@@ -51,6 +51,10 @@
       font-weight: 600;
       transition: background .25s ease, transform .2s ease, color .25s ease;
     }
+
+    .contact{
+      background-color: rgb(55, 55, 135);
+    }
     .nav-btn:hover {
       background: rgba(42,143,199,.14);
       color: var(--bg2);
