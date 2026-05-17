@@ -4,24 +4,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="index, follow" />
-  <meta name="description" content="Contactez Synnova pour événement, collaboration, production ou projet social. Message reçu sous 48h." />
+  <meta name="description" content="Contactez Synnova Tocloe, animatrice Bénin et communicatrice Grand-Popo, pour événement, collaboration, production ou projet social. Message reçu sous 48h." />
   <link rel="canonical" href="https://synnova.com/contact.html" />
   <meta property="og:locale" content="fr_FR" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Contact - Synnova" />
-  <meta property="og:description" content="Contactez Synnova pour événement, collaboration, production ou projet social. Message reçu sous 48h." />
+  <meta property="og:title" content="Contact - Synnova Tocloe | Animatrice Bénin" />
+  <meta property="og:description" content="Contactez Synnova Tocloe, animatrice Bénin et communicatrice Grand-Popo, pour événement, collaboration, production ou projet social. Message reçu sous 48h." />
   <meta property="og:url" content="https://synnova.com/contact.html" />
   <meta property="og:image" content="https://synnova.com/images/6_black_dilue.jpg" />
   <meta property="og:site_name" content="Synnova" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Contact - Synnova" />
-  <meta name="twitter:description" content="Contactez Synnova pour événement, collaboration, production ou projet social. Message reçu sous 48h." />
+  <meta name="twitter:title" content="Contact - Synnova Tocloe | Animatrice Bénin" />
+  <meta name="twitter:description" content="Contactez Synnova Tocloe, animatrice Bénin et communicatrice Grand-Popo, pour événement, collaboration, production ou projet social. Message reçu sous 48h." />
   <meta name="twitter:image" content="https://synnova.com/images/6_black_dilue.jpg" />
   <link rel="stylesheet" href="./styles/contact.css">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500&family=Bebas+Neue&display=swap" rel="stylesheet" />
-  <title>Contact - Synnova</title>
+  <title>Contact - Synnova Tocloe | Animatrice Bénin</title>
 
 </head>
 <body class="page-contact">
@@ -43,7 +43,7 @@
         <span>Travaillons</span>
         <em>ensemble.</em>
       </h1>
-      <p class="hero-sub">Chaque grand projet commence par un premier message. Belvine Kybérance TOCLOE est à l'écoute — pour un événement, une collaboration, une production ou une mission qui a du sens.</p>
+      <p class="hero-sub">Synnova Tocloe, animatrice Bénin et communicatrice Grand-Popo, est à l'écoute — pour un événement, une collaboration, une production ou une mission qui a du sens.</p>
     </div>
 
     <div class="hero-right">
@@ -89,9 +89,11 @@
     <!-- ── FORMULAIRE ── -->
     <div class="form-wrap">
       <h2 class="form-title">Envoyez un message</h2>
-      <p class="form-sub">Décrivez votre projet en quelques lignes — une réponse sous 48h.</p>
+      <p class="form-sub">Décrivez votre projet en quelques lignes — envoyez directement votre message sans ouvrir Gmail et recevez une confirmation instantanée.</p>
 
-      <div class="form-grid">
+      <form id="contactForm" novalidate>
+
+        <div class="form-grid">
 
         <div class="field">
           <label>Prénom</label>
@@ -129,15 +131,16 @@
 
       <div class="form-footer">
         <p class="form-note">Vos données restent confidentielles et ne seront utilisées qu'aux fins de réponse.</p>
-        <button class="submit-btn" id="submitBtn">
+        <button type="submit" class="submit-btn" id="submitBtn">
           <span>Envoyer le message</span>
           <span class="arrow">→</span>
         </button>
       </div>
 
-      <div class="success-msg" id="successMsg">
+      <div class="success-msg" id="successMsg" role="status" aria-live="polite">
         ✓ &nbsp;Message reçu — Je vous répondrai sous 48h max. Merci !
       </div>
+      </form>
     </div>
 
     <!-- ── RÉSEAUX SOCIAUX ── -->

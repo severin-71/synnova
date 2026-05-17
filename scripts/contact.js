@@ -8,8 +8,11 @@ document.querySelectorAll('.pill').forEach(pill => {
   });
 });
 
-/* ── FORM SUBMIT (simulation) */
-const ownerEmail = 'leleader71@gmail.com';
+/* ── FORM SUBMIT — envoi direct via EmailJS API */
+const serviceId = 'service_jidgh9s';
+const templateId = 'template_eqz5du5';
+const publicKey = '2ziUVJ9ofmESic65O';
+const emailEndpoint = 'https://api.emailjs.com/api/v1.0/email/send';
 
 const isValidEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
@@ -34,7 +37,46 @@ const showInlineError = (field, message) => {
   errorEl.textContent = message;
 };
 
-document.getElementById('submitBtn').addEventListener('click', () => {
+const contactForm = document.getElementById('contactForm');
+const submitBtn = document.getElementById('submitBtn');
+const statusMsg = document.getElementById('successMsg');
+const submitLabel = submitBtn.querySelector('span:not(.arrow)');
+
+const setStatus = (message, isError = false) => {
+  statusMsg.textContent = message;
+  statusMsg.classList.toggle('show', Boolean(message));
+  statusMsg.classList.toggle('error', isError);
+};
+
+const setButtonState = (isSending) => {
+  submitBtn.disabled = isSending;
+  submitBtn.style.opacity = isSending ? '.4' : '';
+  submitBtn.style.pointerEvents = isSending ? 'none' : '';
+  submitLabel.textContent = isSending ? 'Envoi de votre message' : 'Envoyer le message';
+};
+
+const sendMessage = async (payload) => {
+  const response = await fetch(emailEndpoint, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      service_id: serviceId,
+      template_id: templateId,
+      user_id: publicKey,
+      template_params: payload,
+    }),
+  });
+
+  if (!response.ok) {
+    const errorText = await response.text();
+    throw new Error(errorText || 'Échec de l’envoi');
+  }
+  return response.json();
+};
+
+contactForm.addEventListener('submit', async (event) => {
+  event.preventDefault();
+
   const prenomField = document.getElementById('prenom');
   const nomField = document.getElementById('nom');
   const emailField = document.getElementById('email');
@@ -46,6 +88,7 @@ document.getElementById('submitBtn').addEventListener('click', () => {
   const message = messageField.value.trim();
 
   [prenomField, nomField, emailField, messageField].forEach(clearInlineError);
+  setStatus('', false);
 
   let hasError = false;
   if (!prenom) {
@@ -81,21 +124,27 @@ document.getElementById('submitBtn').addEventListener('click', () => {
     return;
   }
 
-  const subject = encodeURIComponent(`Nouveau message de ${prenom} ${nom}`.trim());
-  const body = encodeURIComponent(`Email de l'expéditeur : ${email}\nType de demande : ${selectedType || 'Non précisé'}\n\nMessage :\n${message}`);
-  const mailtoLink = `mailto:${ownerEmail}?subject=${subject}&body=${body}`;
+  setButtonState(true);
+  setStatus('Envoi de votre message...', false);
 
-  document.getElementById('successMsg').textContent = '✓ Message prêt à partir vers la boîte de réception de Synnova.';
-  document.getElementById('successMsg').classList.add('show');
-  document.getElementById('submitBtn').style.opacity = '.4';
-  document.getElementById('submitBtn').style.pointerEvents = 'none';
-
-  const anchor = document.createElement('a');
-  anchor.href = mailtoLink;
-  anchor.style.display = 'none';
-  document.body.appendChild(anchor);
-  anchor.click();
-  document.body.removeChild(anchor);
+  try {
+    await sendMessage({
+      from_name: `${prenom} ${nom}`.trim(),
+      from_email: email,
+      request_type: selectedType || 'Non précisé',
+      message,
+        reply_to: email,
+    });
+    setStatus('✓ Message envoyé — Je vous répondrai sous 48h max. Merci !', false);
+    contactForm.reset();
+    selectedType = '';
+    document.querySelectorAll('.pill').forEach(pill => pill.classList.remove('selected'));
+  } catch (error) {
+    console.error(error);
+    setStatus('Erreur lors de l’envoi. Veuillez réessayer plus tard.', true);
+  } finally {
+    setButtonState(false);
+  }
 });
 
 /* ── SHAKE ANIMATION */

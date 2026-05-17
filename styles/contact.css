@@ -356,6 +356,11 @@
       font-size: .88rem;
       color: var(--success);
     }
+    .success-msg.error {
+      background: rgba(217,83,79,.08);
+      border-left-color: var(--error);
+      color: var(--error);
+    }
     .success-msg.show { display: block; }
 
     /* RÉSEAUX SOCIAUX — right column */
