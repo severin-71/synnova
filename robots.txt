@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://synnova.com/sitemap.xml
+Host: https://synnova.com

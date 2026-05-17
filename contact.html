@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  <meta name="description" content="Contactez Synnova pour événement, collaboration, production ou projet social. Message reçu sous 48h." />
+  <link rel="canonical" href="https://synnova.com/contact.html" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Contact - Synnova" />
+  <meta property="og:description" content="Contactez Synnova pour événement, collaboration, production ou projet social. Message reçu sous 48h." />
+  <meta property="og:url" content="https://synnova.com/contact.html" />
+  <meta property="og:image" content="https://synnova.com/images/6_black_dilue.jpg" />
+  <meta property="og:site_name" content="Synnova" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact - Synnova" />
+  <meta name="twitter:description" content="Contactez Synnova pour événement, collaboration, production ou projet social. Message reçu sous 48h." />
+  <meta name="twitter:image" content="https://synnova.com/images/6_black_dilue.jpg" />
+  <link rel="stylesheet" href="./styles/contact.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500&family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <title>Contact - Synnova</title>
+
+</head>
+<body class="page-contact">
+
+  <nav class="page-nav" aria-label="Navigation principale">
+    <a href="./index.html" class="nav-btn">Accueil</a>
+    <a href="./apropos.html" class="nav-btn">À propos</a>
+    <a href="./portfolio.html" class="nav-btn">Portfolio</a>
+    <a href="./univers.html" class="nav-btn">Univers</a>
+    <a href="./contact.html" class="nav-btn">Contact</a>
+  </nav>
+
+<section class="page">
+
+  <!-- HERO — titre + contacts directs-->
+  <div class="hero">
+    <div class="hero-left">
+      <h1 class="hero-heading">
+        <span>Travaillons</span>
+        <em>ensemble.</em>
+      </h1>
+      <p class="hero-sub">Chaque grand projet commence par un premier message. Belvine Kybérance TOCLOE est à l'écoute — pour un événement, une collaboration, une production ou une mission qui a du sens.</p>
+    </div>
+
+    <div class="hero-right">
+      <p class="direct-label">· Contacts directs</p>
+      <div class="direct-links">
+
+        <a href="mailto:contact@synnova.com" class="direct-link">
+          <div class="direct-link-icon">✉</div>
+          <div class="direct-link-text">
+            <div class="direct-link-label">Email</div>
+            <div class="direct-link-value">contact@synnova.com</div>
+          </div>
+          <span class="direct-link-arrow">→</span>
+        </a>
+
+        <a href="https://wa.me/+2290157659302" class="direct-link">
+          <div class="direct-link-icon">☎</div>
+          <div class="direct-link-text">
+            <div class="direct-link-label">Téléphone / WhatsApp</div>
+            <div class="direct-link-value">+229 01 57 65 93 02</div>
+          </div>
+          <span class="direct-link-arrow">→</span>
+        </a>
+
+        <a href="https://linkedin.com/in/synnova" target="_blank" rel="noopener" class="direct-link">
+          <div class="direct-link-icon">in</div>
+          <div class="direct-link-text">
+            <div class="direct-link-label">LinkedIn</div>
+            <div class="direct-link-value">Belvine Kybérance TOCLOE</div>
+          </div>
+          <span class="direct-link-arrow">→</span>
+        </a>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!--FORMULAIRE + RÉSEAUX -->
+  <div class="form-section">
+
+    <!-- ── FORMULAIRE ── -->
+    <div class="form-wrap">
+      <h2 class="form-title">Envoyez un message</h2>
+      <p class="form-sub">Décrivez votre projet en quelques lignes — une réponse sous 48h.</p>
+
+      <div class="form-grid">
+
+        <div class="field">
+          <label>Prénom</label>
+          <input type="text" id="prenom" autocomplete="given-name" placeholder="Sévérin"/>
+        </div>
+
+        <div class="field">
+          <label>Nom</label>
+          <input type="text" id="nom" autocomplete="family-name" placeholder="Kouandte" />
+        </div>
+
+        <div class="field full">
+          <label>Email</label>
+          <input type="email" id="email" autocomplete="email" placeholder="votre@gmail.com" />
+        </div>
+
+        <!-- Type de demande — pills -->
+        <div class="type-field">
+          <div class="type-label">· Type de demande</div>
+          <div class="type-pills">
+            <span class="pill" data-val="event">Animation d'événement</span>
+            <span class="pill" data-val="cinema">Collaboration cinéma</span>
+            <span class="pill" data-val="com">Communication digitale</span>
+            <span class="pill" data-val="eco">Emballages biodégradables</span>
+            <span class="pill" data-val="autre">Autre</span>
+          </div>
+        </div>
+
+        <div class="field full">
+          <label>Votre message</label>
+          <textarea id="message" placeholder="Décrivez votre projet en quelques lignes..."></textarea>
+        </div>
+
+      </div>
+
+      <div class="form-footer">
+        <p class="form-note">Vos données restent confidentielles et ne seront utilisées qu'aux fins de réponse.</p>
+        <button class="submit-btn" id="submitBtn">
+          <span>Envoyer le message</span>
+          <span class="arrow">→</span>
+        </button>
+      </div>
+
+      <div class="success-msg" id="successMsg">
+        ✓ &nbsp;Message reçu — Je vous répondrai sous 48h max. Merci !
+      </div>
+    </div>
+
+    <!-- ── RÉSEAUX SOCIAUX ── -->
+    <div class="social-wrap">
+      <h2 class="social-title">Suivez l'univers</h2>
+      <p class="social-sub">Le quotidien, les coulisses, les projets en cours — tout se passe là.</p>
+
+      <div class="social-cards">
+
+        <a href="https://tiktok.com/@_synnova" target="_blank" rel="noopener"
+           class="social-card" data-s="tiktok">
+          <div class="social-icon" aria-hidden="false">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" role="img" aria-label="TikTok">
+              <path d="M12 2v10.5a3.5 3.5 0 1 1-1-2.62V2h1z" />
+              <path d="M17 7.5a4 4 0 0 1-2-0.5v3.5a4 4 0 1 1-1-2.9V6.5a6 6 0 1 0 3 1z" opacity="0.9"/>
+            </svg>
+          </div>
+          <div class="social-info">
+            <div class="social-name">TikTok</div>
+            <div class="social-handle">@_synnova</div>
+          </div>
+          <span class="social-follow">Suivre →</span>
+        </a>
+
+        <a href="https://instagram.com/_synnova" target="_blank" rel="noopener"
+           class="social-card" data-s="instagram">
+          <div class="social-icon" aria-hidden="false">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" role="img" aria-label="Instagram">
+              <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.4" fill="none" />
+              <circle cx="12" cy="12" r="3.2" stroke="currentColor" stroke-width="1.4" fill="none" />
+              <circle cx="17.5" cy="6.5" r="0.7" fill="currentColor" />
+            </svg>
+          </div>
+          <div class="social-info">
+            <div class="social-name">Instagram</div>
+            <div class="social-handle">@_synnova</div>
+          </div>
+          <span class="social-follow">Suivre →</span>
+        </a>
+
+        <a href="https://facebook.com/synnovalumiere" target="_blank" rel="noopener"
+           class="social-card" data-s="facebook">
+          <div class="social-icon" aria-hidden="false">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" role="img" aria-label="Facebook">
+              <path d="M15 3h-2a4 4 0 0 0-4 4v2H7v3h2v6h3v-6h2.3l.7-3H12V7a1 1 0 0 1 1-1h2V3z" />
+            </svg>
+          </div>
+          <div class="social-info">
+            <div class="social-name">Facebook</div>
+            <div class="social-handle">synnovalumiere</div>
+          </div>
+          <span class="social-follow">Suivre →</span>
+        </a>
+
+        <a href="https://linkedin.com/in/synnova" target="_blank" rel="noopener"
+           class="social-card" data-s="linkedin">
+          <div class="social-icon" aria-hidden="false">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" role="img" aria-label="LinkedIn">
+              <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v14H0zM7 8h4.8v2h.1c.7-1.3 2.4-2 3.9-2 4.2 0 5 2.8 5 6.5V22h-5v-6.5c0-1.6-.1-3.6-2.2-3.6-2.2 0-2.6 1.7-2.6 3.5V22H7z" />
+            </svg>
+          </div>
+          <div class="social-info">
+            <div class="social-name">LinkedIn</div>
+            <div class="social-handle">Belvine Kybérance TOCLOE</div>
+          </div>
+          <span class="social-follow">Se connecter →</span>
+        </a>
+
+      </div>
+
+      <div class="follow-strip">
+        <p>« <strong>Suivez mon quotidien sur TikTok & Instagram</strong> — les coulisses des événements, les tournages, la mission éco. »</p>
+        <span class="sub">Nouvelle publication · Chaque semaine</span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── PHRASE FINALE ── -->
+  <div class="bottom-band">
+    <div class="bottom-quote">
+      « Plusieurs univers. Une seule vision :<br>
+      <em>laisser le monde un peu plus beau, un peu plus juste.</em> »
+    </div>
+    <div class="bottom-sig">
+      <div class="name">Belvine Kybérance TOCLOE</div>
+      <div class="tagline">Animatrice · Créatrice · Actrice · Entrepreneuse</div>
+    </div>
+  </div>
+
+</section>
+<footer>
+  <p>&copy; 2026 Synnova. Tous droits réservés.</p>
+</footer>
+<script src="./scripts/contact.js"></script>
+</body>
+</html>

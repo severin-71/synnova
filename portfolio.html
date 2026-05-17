@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  <meta name="description" content="Portfolio de Synnova : événements, cinéma, communication et initiatives éco. Une sélection de réalisations inspirantes." />
+  <link rel="canonical" href="https://synnova.com/portfolio.html" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Portfolio - Synnova" />
+  <meta property="og:description" content="Portfolio de Synnova : événements, cinéma, communication et initiatives éco. Une sélection de réalisations inspirantes." />
+  <meta property="og:url" content="https://synnova.com/portfolio.html" />
+  <meta property="og:image" content="https://synnova.com/images/6.jpg" />
+  <meta property="og:site_name" content="Synnova" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Portfolio - Synnova" />
+  <meta name="twitter:description" content="Portfolio de Synnova : événements, cinéma, communication et initiatives éco. Une sélection de réalisations inspirantes." />
+  <meta name="twitter:image" content="https://synnova.com/images/6.jpg" />
+  <link rel="stylesheet" href="./styles/portfolio.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <title>Portfolio - Synnova</title>
+
+</head>
+<body class="page-portfolio">
+    <nav class="page-nav" aria-label="Navigation principale">
+        <a href="./index.html" class="nav-btn">Accueil</a>
+        <a href="./apropos.html" class="nav-btn">À propos</a>
+        <a href="./portfolio.html" class="nav-btn">Portfolio</a>
+        <a href="./univers.html" class="nav-btn">Univers</a>
+        <a href="./contact.html" class="nav-btn">Contact</a>
+    </nav>
+    <section class="page">
+ 
+  <!-- ── HÉRO ── -->
+  <h1 class="hero-heading">Portfolio<br>&amp; <em>Galerie</em></h1>
+  <p class="hero-sub">Mes réalisations concrètes. Chaque image, chaque événement, chaque mot d'un partenaire raconte ce que je construis — avec constance, avec passion, avec intention.</p>
+
+  <div class="divider"></div>
+ 
+  <!--GALERIE FILTRABLE -->
+ 
+  <!-- FILTRES -->
+  <div class="filter-bar">
+    <button class="filter-btn active" data-cat="all"><span>Tout voir</span></button>
+    <button class="filter-btn" data-cat="events"><span>Événements</span></button>
+    <button class="filter-btn" data-cat="cinema"><span>Cinéma & Régie</span></button>
+    <button class="filter-btn" data-cat="com"><span>Communication</span></button>
+    <button class="filter-btn" data-cat="eco"><span>Entrepreneuriat</span></button>
+  </div>
+ 
+  <!-- MASONRY -->
+  <div class="masonry" id="masonry">
+ 
+    <!-- Événements -->
+    <div class="masonry-item" data-cat="events">
+      
+      <img src="./images/1778929318923.jpg" onload="this.classList.add('loaded')" alt="Synnova-évènements">
+      <div class="overlay"><div class="overlay-inner">
+        <div class="overlay-cat">Événements</div>
+        <div class="overlay-title">Marathon culinaire de la Chef Keith Sonon</div>
+      </div></div>
+    </div>
+ 
+    <div class="masonry-item wide" data-cat="cinema">
+      
+      <img src="./images/cinema.webp" onload="this.classList.add('loaded')" alt="Synnova-cinéma">
+      <div class="overlay"><div class="overlay-inner">
+        <div class="overlay-cat">Cinéma & Régie</div>
+        <div class="overlay-title">Salon des Organisations de la Société Civile des jeunes et de femmes du Bénin</div>
+      </div></div>
+    </div>
+ 
+    <div class="masonry-item" data-cat="com">
+      <div class="placeholder"><span class="placeholder-icon">📱</span><span>Photo ici</span></div>
+      <img src="images/formation.webp" onload="this.classList.add('loaded')" alt="Synnova-communication">
+      <div class="overlay"><div class="overlay-inner">
+        <div class="overlay-cat">Communication</div>
+        <div class="overlay-title">Campagne digitale — Lancement de marque</div>
+      </div></div>
+    </div>
+ 
+    <div class="masonry-item tall" data-cat="eco">
+     
+      <img src="./images/images.jpeg" onload="this.classList.add('loaded')" alt="Synnova-évènements">
+      <div class="overlay"><div class="overlay-inner">
+        <div class="overlay-cat">Entrepreneuriat</div>
+        <div class="overlay-title">Gamme emballages biodégradables</div>
+      </div></div>
+    </div>
+ 
+    <div class="masonry-item" data-cat="events">
+      
+      <img src="./images/11.jpg" onload="this.classList.add('loaded')" alt="Synnova-évènement">
+      <div class="overlay"><div class="overlay-inner">
+        <div class="overlay-cat">Événements</div>
+        <div class="overlay-title">Conférence — Panel Femmes & Leadership</div>
+      </div></div>
+    </div>
+ 
+  </div><!-- /masonry -->
+ 
+ 
+  <!-- ÉVÉNEMENTS MARQUANTS -->
+  <div class="events-section">
+    <h2 class="section-title">Événements <em>marquants</em></h2>
+    <p class="section-sub">Les moments qui ont compté. Ceux où j'ai laissé une empreinte durable sur scène, en salle, ou derrière la caméra.</p>
+
+    <div class="events-list">
+ 
+      <div class="event-row" data-delay="0">
+        <div class="event-year">2024</div>
+        <div class="event-info">
+          <div class="event-name">Festival International des Arts du Bénin</div>
+          <div class="event-desc">Participation active en tant que régisseuse plateau et actrice — un rendez-vous incontournable de la culture africaine contemporaine.</div>
+        </div>
+        <div class="event-tag">Cinéma & Régie</div>
+      </div>
+ 
+      <div class="event-row" data-delay="80">
+        <div class="event-year">2024</div>
+        <div class="event-info">
+          <div class="event-name">Gala Annuel — Leaders d'Afrique de l'Ouest</div>
+          <div class="event-desc">Animatrice principale de la soirée de gala réunissant entrepreneurs, institutionnels et décideurs régionaux.</div>
+        </div>
+        <div class="event-tag">Événements</div>
+      </div>
+ 
+      <div class="event-row" data-delay="160">
+        <div class="event-year">2023</div>
+        <div class="event-info">
+          <div class="event-name">Lancement — Collection emballages éco-responsables</div>
+          <div class="event-desc">Présentation de la première gamme de produits biodégradables devant investisseurs et partenaires commerciaux.</div>
+        </div>
+        <div class="event-tag">Entrepreneuriat</div>
+      </div>
+ 
+      <div class="event-row" data-delay="240">
+        <div class="event-year">2023</div>
+        <div class="event-info">
+          <div class="event-name">Conférence — Femmes, Médias & Pouvoir</div>
+          <div class="event-desc">Modératrice et intervenante lors de ce panel sur la place des femmes dans les industries créatives et médiatiques.</div>
+        </div>
+        <div class="event-tag">Communication</div>
+      </div>
+ 
+      <div class="event-row" data-delay="320">
+        <div class="event-year">2022</div>
+        <div class="event-info">
+          <div class="event-name">Miss Photogénique — Concours de beauté</div>
+          <div class="event-desc">Élue Miss photogénique à l'issu du concours de beauté féminine organisé en ligne par l'institut de beauté béninois VAL Beauté.</div>
+        </div>
+        <div class="event-tag">Cinéma</div>
+      </div>
+ 
+    </div>
+  </div>
+ 
+ 
+  <!-- PRESSE & MENTIONS -->
+  <div class="presse-section">
+    <h2 class="section-title">Presse &amp; <em>Mentions</em></h2>
+    <p class="section-sub">Ce que les médias et partenaires disent de moi— les mots des autres, souvent, disent l'essentiel.</p>
+
+    <div class="presse-grid">
+ 
+      <!-- Carte 1 -->
+      <div class="presse-card presse-placeholder" data-delay="0">
+        <div class="presse-source">Média / Publication</div>
+        <div class="presse-quote">«La finesse de Synnova Belvine Tocloé lorsqu'elle est photopraphiée n'a pas laissé indifférents les membres du jurys.»</div>
+        <div class="presse-meta">— TRIOMPHE MAG - 2022</div>
+      </div>
+ 
+      <!-- Carte 2 -->
+      <div class="presse-card presse-placeholder" data-delay="100">
+        <div class="presse-source">Média / Publication</div>
+        <div class="presse-quote">«Très jeune, elle n'attend m"nager aucun effort pour la lutte humanitaire.»</div>
+        <div class="presse-meta">—Mairie des jeunes de Grand-Popo - Linkedin - 2021</div>
+      </div>
+ 
+    </div>
+  </div>
+ 
+ 
+  <!--TÉMOIGNAGES-->
+  <div class="temoignages-section">
+    <h2 class="section-title"><em>Témoignages</em></h2>
+    <p class="section-sub">Les voix de ceux qui ont travaillé avec moi. Partenaires, organisateurs, clients — ils ont vécu l'expérience Belvine.</p>
+ 
+    <div class="temoignages-track-wrap">
+      <div class="temoignages-track" id="track">
+ 
+        <div class="temoignage-card">
+          <div class="temoignage-stars">★★★★★</div>
+          <div class="temoignage-text">«L'art oratoire, l'actorat et l'entrepreneuriat son ses pssions.»</div>
+          <div class="temoignage-author">
+            <div class="author-avatar">A</div>
+            <div>
+              <div class="author-role">Festival des Arts du Bénin</div>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="temoignage-card">
+          <div class="temoignage-stars">★★★★★</div>
+          <div class="temoignage-text">«Engagée dans dans les enjeux numériques au Bénin. »</div>
+          <div class="temoignage-author">
+            <div class="author-avatar">B</div>
+            <div>
+              <div class="author-role">Association des Blogueurs du Bénin (AB-Bénin)</div>
+            </div>
+          </div>
+        </div>
+ 
+      </div><!-- /track -->
+    </div>
+ 
+    <div class="carousel-controls">
+      <button class="carousel-btn" id="prev">&#8592;</button>
+      <button class="carousel-btn" id="next">&#8594;</button>
+      <div class="carousel-dots" id="dots"></div>
+    </div>
+  </div>
+ 
+ 
+  <!-- ── CTA ── -->
+  <div class="cta-band" id="contact">
+    <div class="cta-band-text">
+      <h3>Ce portfolio vous inspire ?<br><em>Construisons quelque chose ensemble.</em></h3>
+      <p>Événement, production, collaboration ou mission sociale — je suis prête.</p>
+    </div>
+    <div class="cta-buttons">
+      <a href="./contact.html" class="btn btn-primary">Me contacter</a>
+      <a href="./univers.html" class="btn btn-outline">Voir mes univers</a>
+    </div>
+  </div>
+ 
+</section>
+
+<footer>
+  <p>&copy; 2026 Synnova. Tous droits réservés.</p>
+</footer>
+
+<script src="./scripts/portfolio.js"></script>
+</body>
+</html>
