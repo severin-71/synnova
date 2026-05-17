@@ -71,7 +71,7 @@ const sendMessage = async (payload) => {
     const errorText = await response.text();
     throw new Error(errorText || 'Échec de l’envoi');
   }
-  return response.json();
+  return response.text();
 };
 
 contactForm.addEventListener('submit', async (event) => {
